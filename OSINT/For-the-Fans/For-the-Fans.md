@@ -1,4 +1,4 @@
-### ![Title](relative/path/to/image.png)
+### ![Title](For_the_Fans_Title.png)
 
 ## Challenge Description
 
@@ -25,13 +25,13 @@ I then went on to try the second platform I thought about and it's Twitter. I pl
 
 I got lucky and turns out it is actually Twitter. To confirm that this was actually part of the CTF and not some random account, you can see that one of the posts referenced AceCTF's website.
 
-![DrakeSaltyOVO Twitter results](relative/path/to/image.png)
+![DrakeSaltyOVO Twitter results](DrakeSaltyOVO_Twitter.png)
 
 ### Step 2 (Analyzing the Twitter account)
 
 Now, we move on to analyzing this account's posts. Starting from the very first post on the account. It talks about how admin wants to post about Drake on another platform since Twitter users keep roasting him about liking Drake. This means that there is another account we need to look out for.
 
-![DrakeSaltyOVO's post about moving to another platform](relative/path/to/image.png)
+![DrakeSaltyOVO's post about moving to another platform](DrakeSaltyOVO_Blog.png)
 
 The next clue we have is his birthday, which is in his second post. We can clearly see that it's 14 September 2000. The text in the picture that says "289 days to your next birthday" might seem misleading because it could imply that admin's birthday is on June 30 2001. But this is debunked by the second last post on the account posted on 29 November 2024 where the admin says that he's excited to turn 25 in just 289 days.
 
