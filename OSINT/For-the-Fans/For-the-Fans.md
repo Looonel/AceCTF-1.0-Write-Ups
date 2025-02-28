@@ -1,4 +1,4 @@
-### ![Title](For_the_Fans_Title.png)
+### ![Title](Pictures/For_the_Fans_Title.png)
 
 ## Challenge Description
 
@@ -25,29 +25,29 @@ I then went on to try the second platform I thought about and it's Twitter. I pl
 
 I got lucky and turns out it is actually Twitter. To confirm that this was actually part of the CTF and not some random account, you can see that one of the posts referenced AceCTF's website.
 
-![DrakeSaltyOVO Twitter results](DrakeSaltyOVO_Twitter.png)
+![DrakeSaltyOVO Twitter results](Pictures/DrakeSaltyOVO_Twitter.png)
 
 ### Step 2 (Analyzing the Twitter account)
 
 Now, we move on to analyzing this account's posts. Starting from the very first post on the account. It talks about how admin wants to post about Drake on another platform since Twitter users keep roasting him about liking Drake. This means that there is another account we need to look out for.
 
-![DrakeSaltyOVO's post about moving to another platform](DrakeSaltyOVO_Blog.png)
+![DrakeSaltyOVO's post about moving to another platform](Pictures/DrakeSaltyOVO_Blog.png)
 
 The next clue we have is his birthday, which is in his second post. We can clearly see that it's 14 September 2000. The text in the picture that says "289 days to your next birthday" might seem misleading because it could imply that admin's birthday is on June 30 2001. But this is debunked by the second last post on the account posted on 29 November 2024 where the admin says that he's excited to turn 25 in just 289 days.
 
-![DrakeSaltyOVO's post about setting up his new blog account](relative/path/to/image.png)
+![DrakeSaltyOVO's post about setting up his new blog account](Pictures/path/to/image.png)
 
-![DrakeSaltyOVO's post about being excited for his birthday](relative/path/to/image.png)
+![DrakeSaltyOVO's post about being excited for his birthday](Pictures/path/to/image.png)
 
 ### Step 3 (Finding the new blog)
 
 From the post before, we can see the UI of the blog website admin is trying to register in. After doing a quick Google search, the UI looks very similar to tumblr's register page.
 
-![Tumblr's register page UI](relative/path/to/image.png)
+![Tumblr's register page UI](Pictures/path/to/image.png)
 
 I unfortunately made a tumblr account (turns out you don't have to and there's another website called tumbig to search for stuff in tumblr without making a tumblr account but oh well). Typing in the username "salty-senpai-drake1" will result in a blog with the same exact username. There's only a single post in that blog which is:
 
-![Admin's tumblr blog](relative/path/to/image.png)
+![Admin's tumblr blog](Pictures/path/to/image.png)
 
 `N3q8ryccAAQrDS+tIAAAAAAAAABqAAAAAAAAANGqpB7VL3HfX5dq2a0oNrtZRM2Hum9ExZnUSpeMMG2rzSg6lQEEBgABCSAABwsBAAIkBvEHARJTD3GIJuGJqEfIwbSE/71QeN8hIQEAAQAMIBwACAoBra6o3QAABQEZAQAREwBmAGwAYQBnAC4AdAB4AHQAAAAZABQKAQCfS+NlYELbARUGAQAgAAAAAAA=`
 
@@ -61,17 +61,17 @@ Or you can probably just deduce it from the very end of the string, if it ends w
 
 Putting the set of strings into a base64 decoder using UTF-8, we get this decoded string:
 
-![Decoded base64 string](relative/path/to/image.png)
+![Decoded base64 string](Pictures//path/to/image.png)
 
 It might seem like random symbols but notice how it starts with a 7z in the start of the string, this means that it's a 7z file. Putting the encoded set of strings into a text file and uploading it to the decoder will result in a .7z file.
 
-![Obtaining the .7z file](relative/path/to/image.png)
+![Obtaining the .7z file](Pictures/path/to/image.png)
 
 ### Step 5 (Extracting the .7z file)
 
 You might think that this is the end of the challenge, but when we tried to extract the 7z and turns out you need a password to extract it. Now there is one final post in the Twitter account that I haven't mentioned and this is where it comes in.
 
-![Admin's password checker](relative/path/to/image.png)
+![Admin's password checker](Pictures/path/to/image.png)
 
 From this post, we can know several things: The password is composed of only numbers, it's 7 characters long, and it takes 1.63 seconds to crack. We all already know where this is going. It must be the admin's birthday. If you input admin's birthday in the same exact password strength checker website it'll also result in 1.63 seconds.
 
@@ -90,6 +90,6 @@ While doing this challenge, my team stumbled upon a few red herrings/misleading 
 
 I thought this challenge was actually pretty fun. I haven't participated in a lot of CTF events and I'm just getting started. Through this challenge I learned a lot about how OSINT challenges could work and all the possibilities and factors you need to count for in searching for the flag. I hope the people who were struggling to find the flag in this challenge finally know how to do it. Good job to the problem setter too for making the Twitter account since last year.
 
-![ABSOLUTE CINEMA!](relative/path/to/image.png)
+![ABSOLUTE CINEMA!](Pictures/path/to/image.png)
 
 </div>
