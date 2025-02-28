@@ -17,9 +17,7 @@ February 27th, 9:58:18 PM UTC+9
 ### Step 1 (Finding the platform)
 
 <div style="text-align: justify">
-The first though that comes to mind for everyone who sees the word username is to find it in a platform. My first thought was to search for the username "DrakeSaltyOVO" into Google but doing that will result in this:
-
-![DrakeSaltyOVO Google search results](relative/path/to/image.png)
+The first though that comes to mind for everyone who sees the word username is to find it in a platform. My first thought was to search for the username "DrakeSaltyOVO" into Google but doing that will result in nothing
 
 I tried searching the username in multiple platforms using URL. The first social media platform I thought about is Instagram since it's one of the most used platforms. Unfortunately, nothing appeared.
 
