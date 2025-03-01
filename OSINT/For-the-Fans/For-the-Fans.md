@@ -51,7 +51,7 @@ I unfortunately made a tumblr account (turns out you don't have to and there's a
 
 `N3q8ryccAAQrDS+tIAAAAAAAAABqAAAAAAAAANGqpB7VL3HfX5dq2a0oNrtZRM2Hum9ExZnUSpeMMG2rzSg6lQEEBgABCSAABwsBAAIkBvEHARJTD3GIJuGJqEfIwbSE/71QeN8hIQEAAQAMIBwACAoBra6o3QAABQEZAQAREwBmAGwAYQBnAC4AdAB4AHQAAAAZABQKAQCfS+NlYELbARUGAQAgAAAAAAA=`
 
-If you noticed something, in the very end of the post there's a bunch of weird letters. These sets of weird letters are what's called a base4 encoding. We can deduce this by checking the string based on this format:
+If you noticed something, in the very end of the post there's a bunch of weird letters. These sets of weird letters are what's called a base64 encoding. We can deduce this by checking the string based on this format:
 
 `^([A-Za-z0-9+/]{4})*([A-Za-z0-9+/]{3}=|[A-Za-z0-9+/]{2}==)?$`
 
